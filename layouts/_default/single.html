@@ -8,4 +8,8 @@
         {{- partial "page.html" . -}}
         {{- partial "toc.html" . -}}
     {{ end }}
+
+    {{ if eq .Type "about" }}
+        {{- partial "about.html" . -}}
+    {{ end}}
 {{ end }}
