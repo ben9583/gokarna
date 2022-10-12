@@ -1,12 +1,16 @@
-<div class="post container">
+<div class="post">
 
     <div class="post-header-section">
         <h1>{{ .Title }}</h1>
     </div>
 
     <div class="post-content">
-        <p>
+            <div class="about-image" style="float:right;margin:20px">
+                <img src="{{ .Site.Params.AboutImage }}" alt="About Image" class="about-image" style="width:400px;height:auto"/>
+                <p><i>{{ .Site.Params.AboutImageDescription }}</i></p>
+            </div>
+        
             {{ .Content }}
-        </p>
+        
     </div>
 </div>
