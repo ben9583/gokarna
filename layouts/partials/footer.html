@@ -1,3 +1,4 @@
 <footer class="footer">
-    <span>&copy; {{ now.Year }} {{ .Site.Params.Footer}}</span>
+    <span id="__theme-copyright">&copy; {{ now.Year }} {{ .Site.Params.Footer}}</span>
+    <script>document.getElementById("__theme-copyright").innerHTML = "&copy; " + new Date().getFullYear() + " {{ .Site.Params.Footer}}"</script>
 </footer>
