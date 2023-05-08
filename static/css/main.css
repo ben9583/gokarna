@@ -594,3 +594,16 @@ table td {
   height: 1px;
   overflow: hidden;
 }
+
+button.button-like-a-link {
+  display: inline-block;
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+  outline: inherit;
+  padding: 0;
+  text-align: left;
+  text-decoration: underline;
+}
