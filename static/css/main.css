@@ -606,6 +606,7 @@ button.button-like-a-link {
   padding: 0;
   text-align: left;
   text-decoration: underline;
+  vertical-align: middle;
 }
 
 button.button-like-a-link:hover {
