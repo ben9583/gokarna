@@ -17,5 +17,18 @@
         <p>
             {{ .Content }}
         </p>
+        {{ if .Site.DisqusShortname }}
+        <div class="post-comments">
+            {{ template "_internal/disqus.html" . }}
+        </div>
+        {{ end }}
+    </div>
+
+    <div class="prev-next">
+        {{ if eq .Site.Params.TogglePreviousAndNextButtons "true" }}
+            {{ if or .PrevInSection .NextInSection }}
+                {{ partial "prev-next.html" . }}
+            {{ end }}
+        {{ end }}
     </div>
 </div>
