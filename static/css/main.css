@@ -607,3 +607,14 @@ button.button-like-a-link {
   text-align: left;
   text-decoration: underline;
 }
+
+button.button-like-a-link:hover {
+  color: var(--accent-color);
+  fill: var(--accent-color);
+}
+
+/* This is set in partials/head.html and is populated via config */
+button.button-like-a-link .feather-sun:hover {
+  fill: black;
+  color: black;
+}
