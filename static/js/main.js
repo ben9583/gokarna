@@ -111,7 +111,7 @@ function setThemeByUserPref() {
     const darkThemeToggles = document.querySelectorAll('.dark-theme-toggle');
     setTheme(savedTheme, darkThemeToggles);
     darkThemeToggles.forEach(el => el.addEventListener('click', (event) => {
-        toggleIcon = event.currentTarget.querySelector("a svg.feather");
+        toggleIcon = event.currentTarget.querySelector("button svg.feather");
         if (toggleIcon.classList[1] === THEME_TO_ICON_CLASS.dark) {
             setTheme('light', [event.currentTarget]);
         } else if (toggleIcon.classList[1] === THEME_TO_ICON_CLASS.light) {
