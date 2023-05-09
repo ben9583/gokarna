@@ -29,8 +29,6 @@ html {
   font-size: 17.5px;
   min-height: 100%;
   position: relative;
-  transition-property: background-color;
-  transition-duration: 0.1s;
 }
 
 body {
@@ -136,8 +134,6 @@ img {
   transition: box-shadow 0.3s ease-in-out;
   width: 100%;
   z-index: 5;
-  transition-property: background-color;
-  transition-duration: 0.1s;
 }
 
 .header a {
