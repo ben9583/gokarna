@@ -1,4 +1,9 @@
 <footer class="footer">
+    <!-- Option for user to inject custom html -->
+    {{ if .Site.Params.CustomFooterHTML }}
+    {{ .Site.Params.CustomFooterHTML | safeHTML }}
+    {{ end }}
+
     <span id="__theme-copyright">&copy; {{ now.Year }} {{ .Site.Params.Footer}}</span>
     <script>document.getElementById("__theme-copyright").innerHTML = "&copy; " + new Date().getFullYear() + " {{ .Site.Params.Footer}}"</script>
 </footer>
